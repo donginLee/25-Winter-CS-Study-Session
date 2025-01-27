@@ -18,7 +18,7 @@ Bit By Bit 은,
     <td style="border: 0.5px solid gray;">
       <a href="https://github.com/donginLee">
         <img src="https://avatars.githubusercontent.com/donginLee" width="130px;" alt="">
-        <br><b>이동인</b>
+        <br><b>이동인</b>(스터디장)
       </a>
     </td>
     <td style="border: 0.5px solid gray;">
@@ -26,6 +26,12 @@ Bit By Bit 은,
         <img src="https://avatars.githubusercontent.com/kimgs888" width="130px;" alt="">
         <br><b>김광수</b>
       </a>
+              <td style="border: 0.5px solid gray;">
+      <a href="https://github.com/johnkdk609">
+        <img src="https://avatars.githubusercontent.com/johnkdk609" width="130px;" alt="">
+        <br><b>김동규</b>
+      </a>
+    </td>
     </td>
         <td style="border: 0.5px solid gray;">
       <a href="https://github.com/snow9802">
@@ -33,9 +39,10 @@ Bit By Bit 은,
         <br><b>박설진</b>
       </a>
     </td>
+    
   </tr>
   <tr>
-    <td colspan="3" style="border: 0.5px solid gray;"><b>Bit By Bit Members</b></td>
+    <td colspan="4" style="border: 0.5px solid gray;"><b>Bit By Bit Members</b></td>
   </tr>
 </table>
 
