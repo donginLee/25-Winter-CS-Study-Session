@@ -1,0 +1,114 @@
+# 문제 및 해설 파일 (Exam Questions)
+# 작성일: 2025-02-06
+# 담당자: 김광수
+
+=========================================
+1. 라우팅 & 라우팅 테이블
+
+Q1. 라우팅(Routing)이란 무엇이며, 라우팅 테이블(Routing Table)의 역할은 무엇인가요?
+A. 라우팅(Routing)은 데이터 패킷을 목적지까지 전달하는 최적의 경로를 찾는 과정입니다.
+라우팅 테이블(Routing Table)은 라우터가 어떤 경로를 통해 패킷을 전달할지 결정하는 정보를 저장한 표입니다.
+
+Q2. 정적 라우팅(Static Routing)과 동적 라우팅(Dynamic Routing)의 차이점은?
+A.
+정적 라우팅: 관리자가 수동으로 설정하는 방식, 네트워크 변경 시 수동 업데이트 필요.
+동적 라우팅: 라우터가 자동으로 네트워크 경로를 학습하며, 변경 시 자동 업데이트 가능.
+
+Q3. 라우터가 목적지 네트워크를 찾기 위해 사용하는 주요 라우팅 프로토콜 2~3가지를 설명하세요.
+A.
+RIP (Routing Information Protocol): 거리 벡터 방식, 홉 수 기반 경로 선택.
+OSPF (Open Shortest Path First): 링크 상태 방식, 네트워크 변화에 빠르게 대응.
+BGP (Border Gateway Protocol): AS(자율 시스템) 간 라우팅에 사용.
+
+2. MAC 주소 & ARP(Address Resolution Protocol)
+
+Q4. MAC 주소란 무엇이며, 네트워크에서 어떤 역할을 하나요?
+A. **MAC 주소(Media Access Control Address)**는 네트워크 장치(NIC)에 할당된 고유한 식별자로, LAN(Local Area Network)에서 장치를 식별하는 데 사용됩니다.
+
+Q5. ARP(Address Resolution Protocol)의 역할과 동작 과정을 설명하세요.
+A. ARP는 IP 주소를 MAC 주소로 변환하는 프로토콜입니다.
+동작 과정:
+장치가 특정 IP 주소로 데이터를 보내려고 할 때, 해당 IP의 MAC 주소가 ARP 캐시에 없는 경우 ARP 요청(브로드캐스트) 전송.
+해당 IP를 가진 장치가 ARP 응답(유니캐스트) 전송.
+MAC 주소를 받아 ARP 캐시에 저장 후 데이터 전송.
+
+Q6. ARP 스푸핑(ARP Spoofing)이란 무엇이며, 이를 방지하는 방법은?
+A. ARP 스푸핑은 공격자가 가짜 MAC 주소를 응답하여 네트워크 트래픽을 가로채는 공격입니다.
+방지 방법:
+정적 ARP 테이블 설정
+ARP 감시 기능(ARP Spoofing Detection) 활성화
+VPN, HTTPS 사용으로 데이터 암호화
+
+3. IPv4 vs. IPv6 & 클래스풀(Classful) 주소 체계
+
+Q7. IPv4와 IPv6의 주요 차이점을 설명하세요.
+A.
+IPv4: 32비트 주소 체계, 43억 개 주소 제공, NAT 필요, 보안 기능 부족.
+IPv6: 128비트 주소 체계, 사실상 무제한 주소 제공, NAT 불필요, IPSec 보안 내장.
+
+Q8. IPv4 주소 클래스(Classful Addressing)란 무엇이며, A, B, C 클래스의 범위를 설명하세요.
+A. 클래스풀 주소(Classful Addressing)는 네트워크 크기에 따라 IP 주소를 A, B, C, D, E 클래스로 나누는 방식입니다.
+
+A 클래스: 0.0.0.0 ~ 127.255.255.255 (대규모 네트워크)
+B 클래스: 128.0.0.0 ~ 191.255.255.255 (중간 규모 네트워크)
+C 클래스: 192.0.0.0 ~ 223.255.255.255 (소규모 네트워크)
+
+Q9. IPv6에서 NAT가 필요 없는 이유는 무엇인가요?
+A. IPv6는 충분한 주소 공간을 제공하므로, 모든 장치에 공인 IP를 할당할 수 있기 때문입니다.
+
+4. NAT(Network Address Translation)
+
+Q10. NAT(Network Address Translation)의 개념과 사용 목적을 설명하세요.
+A. NAT는 사설 IP 주소를 공인 IP 주소로 변환하는 기술로,
+IPv4 주소 부족 문제 해결
+보안 강화 (내부 네트워크 보호)
+여러 장치가 하나의 공인 IP를 공유 가능
+
+Q11. Static NAT, Dynamic NAT, PAT(Port Address Translation)의 차이점은?
+A.
+Static NAT: 1개의 사설 IP ↔ 1개의 공인 IP (고정 매핑).
+Dynamic NAT: 여러 개의 사설 IP ↔ 풀(pool) 내 공인 IP (동적 할당).
+PAT: 하나의 공인 IP를 여러 사설 IP가 포트 번호로 구분하여 사용 (Port Mapping).
+
+5. HTTP 요청(Request) & 응답(Response) 헤더
+
+Q12. HTTP 요청(Request) 헤더와 응답(Response) 헤더의 차이점을 설명하세요.
+A.
+요청 헤더(Request Header): 클라이언트가 서버에 요청할 때 포함 (예: User-Agent, Accept).
+응답 헤더(Response Header): 서버가 클라이언트에 응답할 때 포함 (예: Content-Type, Set-Cookie).
+
+Q13. HTTP 1.0, 1.1, 2.0, 3.0의 차이점과 성능 개선 요소를 설명하세요.
+A.
+HTTP/1.0: 한 연결당 하나의 요청 처리 (비효율적).
+HTTP/1.1: Keep-Alive 도입, 하나의 연결로 여러 요청 가능.
+HTTP/2.0: 멀티플렉싱(Multiplexing) 지원, 요청/응답 병렬 처리.
+HTTP/3.0: QUIC 프로토콜 사용, TCP 대신 UDP 기반으로 속도 개선.
+
+6. 암호화 & 보안
+
+Q14. 대칭키 암호화와 비대칭키 암호화의 차이점은?
+A.
+대칭키 암호화: 하나의 키로 암호화/복호화 (AES, DES).
+비대칭키 암호화: 공개키(Public Key)와 비밀키(Private Key) 사용 (RSA, ECC).
+
+Q15. HTTPS에서 TLS를 사용하는 이유는 무엇이며, TLS 핸드셰이크 과정에서 어떤 일이 발생하나요?
+A. HTTPS는 데이터를 암호화하여 도청과 위변조를 방지하기 위해 TLS를 사용합니다.
+TLS 핸드셰이크 과정:
+클라이언트가 Client Hello를 전송하여 지원 가능한 암호화 방식 전달.
+서버가 Server Hello 응답 및 인증서(Certificate) 전송.
+클라이언트가 서버 인증서를 검증 후, 세션 키 생성 및 교환.
+이후 세션 키로 대칭 암호화 통신 진행.
+
+7. 로컬 스토리지(Local Storage) & 세션 스토리지(Session Storage) & 쿠키(Cookie)
+
+Q16. 로컬 스토리지(Local Storage), 세션 스토리지(Session Storage), 쿠키(Cookie)의 차이점은?
+A.
+로컬 스토리지: 브라우저 종료 후에도 데이터 유지.
+세션 스토리지: 브라우저 종료 시 데이터 삭제.
+쿠키: 서버와 함께 사용 가능, 작은 데이터 저장 가능.
+
+Q17. 쿠키의 Secure 속성과 HttpOnly 속성의 역할을 설명하세요.
+A.
+Secure: HTTPS에서만 쿠키 전송 가능.
+HttpOnly: 자바스크립트에서 쿠키 접근 차단 (XSS 공격 방지).
+
