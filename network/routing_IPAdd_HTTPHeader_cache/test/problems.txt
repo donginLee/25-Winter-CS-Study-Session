@@ -1,0 +1,43 @@
+# 문제 파일 (Exam Questions)
+# 작성일: 2025-02-06
+# 담당자: 김광수
+
+=========================================
+
+1. 라우팅 & 라우팅 테이블
+Q1. 라우팅(Routing)이란 무엇이며, 라우팅 테이블(Routing Table)의 역할은 무엇인가요?
+Q2. 정적 라우팅(Static Routing)과 동적 라우팅(Dynamic Routing)의 차이점은?
+Q3. 라우터가 목적지 네트워크를 찾기 위해 사용하는 주요 라우팅 프로토콜 2~3가지를 설명하세요.
+
+2. MAC 주소 & ARP(Address Resolution Protocol)
+Q4. MAC 주소란 무엇이며, 네트워크에서 어떤 역할을 하나요?
+Q5. ARP(Address Resolution Protocol)의 역할과 동작 과정을 설명하세요.
+Q6. ARP 스푸핑(ARP Spoofing)이란 무엇이며, 이를 방지하는 방법은?
+
+3. IPv4 vs. IPv6 & 클래스풀(Classful) 주소 체계
+Q7. IPv4와 IPv6의 주요 차이점을 설명하세요.
+Q8. IPv4 주소 클래스(Classful Addressing)란 무엇이며, A, B, C 클래스의 범위를 설명하세요.
+Q9. IPv6에서 NAT가 필요 없는 이유는 무엇인가요?
+
+4. NAT(Network Address Translation)
+Q10. NAT(Network Address Translation)의 개념과 사용 목적을 설명하세요.
+Q11. Static NAT, Dynamic NAT, PAT(Port Address Translation)의 차이점은?
+
+5. HTTP 요청(Request) & 응답(Response) 헤더
+Q12. HTTP 요청(Request) 헤더와 응답(Response) 헤더의 차이점을 설명하세요.
+Q13. HTTP 1.0, 1.1, 2.0, 3.0의 차이점과 성능 개선 요소를 설명하세요.
+
+6. 암호화 & 보안
+Q14. 대칭키 암호화와 비대칭키 암호화의 차이점은?
+Q15. HTTPS에서 TLS를 사용하는 이유는 무엇이며, TLS 핸드셰이크 과정에서 어떤 일이 발생하나요?
+
+7. 로컬 스토리지(Local Storage) & 세션 스토리지(Session Storage) & 쿠키(Cookie)
+Q16. 로컬 스토리지(Local Storage), 세션 스토리지(Session Storage), 쿠키(Cookie)의 차이점은?
+Q17. 쿠키의 Secure 속성과 HttpOnly 속성의 역할을 설명하세요.
+
+
+
+
+
+
+
