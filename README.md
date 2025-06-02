@@ -1,6 +1,6 @@
-# 25-Winter-CS-Study-Session : Bit By Bit
+# 25-Winter-CS-Study-Session : BIT BY BIT 1st - CS
 
-Bit By Bit 은,
+BIT BY BIT 1st - CS 은,
 2025년 1월 13일부터 2월 28일까지 총 6주간 진행되는 컴퓨터 과학 기본 지식(CS) 스터디입니다.  
 이번 스터디의 주요 목표는 [CS 지식의 정석 강의](https://www.inflearn.com/course/%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%A9%B4%EC%A0%91-cs-%ED%8A%B9%EA%B0%95) 를 기반으로 디자인패턴, 운영체제, 네트워크, 데이터베이스 등 CS 지식 전반을 습득하고 정리하는 것입니다.
 
